@@ -3,7 +3,8 @@ import React from "react";
 // import { TimeoutComponent } from "./hooks/useTimeout/TimeoutComponent";
 // import { DebounceComponent } from "./hooks/useDebounce/DebounceComponent";
 // import { StorageComponent } from "./hooks/useStorage/StorageComponent";
-import { AsyncComponent } from "./hooks/useAsync/AsyncComponent";
+// import { AsyncComponent } from "./hooks/useAsync/AsyncComponent";
+import { FetchComponent } from "./hooks/useFetch/FetchComponent";
 export default function App() {
   return (
     <div className="App">
@@ -11,7 +12,8 @@ export default function App() {
       {/* <TimeoutComponent /> */}
       {/* <DebounceComponent /> */}
       {/* <StorageComponent /> */}
-      <AsyncComponent />
+      {/* <AsyncComponent /> */}
+      <FetchComponent />
     </div>
   );
 }
