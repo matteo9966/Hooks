@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
-export const useAsync = (callback, dep) => {
+export const useAsync = (callback) => {
   //callback quando è chiamato è chiamato con bind
 
   const [loading, setLoading] = useState(false);
