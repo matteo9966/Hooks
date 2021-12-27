@@ -5,9 +5,9 @@ import React from "react";
 // import { StorageComponent } from "./hooks/useStorage/StorageComponent";
 // import { AsyncComponent } from "./hooks/useAsync/AsyncComponent";
 // import { FetchComponent } from "./hooks/useFetch/FetchComponent";
-
+import WindowSizeComponent from "./hooks/useWindowSize/WindowSizeComponent";
 // import DeepCompareEffectComponent from "./hooks/useDeepEffect/start/DeepCompareEffectComponent";
-import OnScreenComponent from "./hooks/useOnScreen/OnScreenComponent";
+// import OnScreenComponent from "./hooks/useOnScreen/OnScreenComponent";
 export default function App() {
   return (
     <div className="App">
@@ -18,7 +18,8 @@ export default function App() {
       {/* <AsyncComponent /> */}
       {/* <FetchComponent /> */}
       {/* <DeepCompareEffectComponent /> */}
-      <OnScreenComponent />
+      {/* <OnScreenComponent /> */}
+      <WindowSizeComponent />
     </div>
   );
 }

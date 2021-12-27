@@ -10,12 +10,18 @@ const useOnScreen = (ref) => {
   const node = ref.current;
   useEffect(() => {
     if (node == null) return;
-    const observable = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) {
-        setVisible(true);
-        entry.target.style = "background-color:red";
-      }
-    });
+    const observable = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          entry.target.style = "background-color:red";
+        } else {
+          setVisible(false);
+          entry.target.style = "background-color:blue";
+        }
+      },
+      { threshold: 1 }
+    );
 
     observable.observe(node);
 

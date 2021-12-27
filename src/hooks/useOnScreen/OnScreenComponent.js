@@ -3,7 +3,7 @@ import useOnScreen from "./useOnScreen";
 
 export default function OnScreenComponentComponent() {
   const headerTwoRef = useRef();
-  const visible = useOnScreen(headerTwoRef, "-100px");
+  const visible = useOnScreen(headerTwoRef);
 
   return (
     <div>
